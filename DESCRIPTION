@@ -1,13 +1,14 @@
 Package: farstools
-Title: What the Package Does (one line, title case)
+Title: Creates a summary and map for NHSTA-FARS data
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Authors@R: person("Logan", "Gallaway", email = "lwgallaway@gmail.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 Depends: R (>= 3.4.3)
-License: What license is it under?
+License: CC0
 Encoding: UTF-8
 LazyData: true
 Suggests: knitr,
     rmarkdown
+Imports: dplyr, maps, readr, tidyr
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1

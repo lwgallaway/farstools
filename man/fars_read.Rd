@@ -13,7 +13,7 @@ fars_read(filename)
 a tibble of FARS data for a given year
 }
 \description{
-This function is used to take data from the US-NHTSA Fatality Analysis Reporting System (FARS)   
+This function is used to take data from the US-NHTSA Fatality Analysis Reporting System (FARS)
 in a .csv file and return it back as a tidyverse dataframe(tibble).
 }
 \note{

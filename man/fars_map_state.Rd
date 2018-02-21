@@ -17,6 +17,10 @@ a plot showing the fatality locations in a particular state
 \description{
 This function will map the fatalities for a given state using latitude and longitude.
 }
+\note{
+Function will throw an error if \code{state num} is not a valid state. Function will also see
+      if there are no accidents for a given state/year and pass a message to that effect.
+}
 \examples{
 fars_map_state(39, 2014)
 }

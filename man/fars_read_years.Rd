@@ -13,10 +13,13 @@ fars_read_years(years)
 a list of data frames the length of the \code{years} argument
 }
 \description{
-Function to make a list where each list item is a tibble of month and year data. 
+Function to make a list where each list item is a tibble of month and year data.
 Each month & year entry corresponds to a fatal crash. The \code{years} argument will take numeric vector.
 However, the \code{years} argument is used to build filename paths, so all files must be stored
 in the working directory or the working directory changed before running the function.
+}
+\note{
+function will try to continue if it finds any invalid years and will throw a warning
 }
 \examples{
 fars_read_years(2013:2015)

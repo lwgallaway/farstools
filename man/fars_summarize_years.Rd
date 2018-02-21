@@ -13,7 +13,7 @@ fars_summarize_years(years)
 a tibble of incidents by month per year
 }
 \description{
-This function will process the FARS data to produce a tibble that shows the number of 
+This function will process the FARS data to produce a tibble that shows the number of
 fatalities by month per year
 }
 \examples{
