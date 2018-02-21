@@ -21,3 +21,8 @@ in the working directory or the working directory changed before running the fun
 \note{
 function will try to continue if it finds any invalid years and will throw a warning
 }
+\examples{
+\dontrun{
+fars_read_years(2013:2015)
+}
+}

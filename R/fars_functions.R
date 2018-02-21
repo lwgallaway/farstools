@@ -10,10 +10,13 @@ library(graphics)
 #'
 #' @param filename A character string with the location of the data file.
 #' @return a tibble of FARS data for a given year
-#' @importFrom dplyr tbl_df
+#' @importFrom dplyr tbl_df %>%
 #' @importFrom readr read_csv
 #' @note Function will also check is file exists and throw an error if it is not present.
-#' @example fars_read("accident_2014.csv.bz2")
+#' @examples
+#' \dontrun{
+#' fars_read("accident_2014.csv.bz2")
+#' }
 #'
 #'
 fars_read <- function(filename) {
@@ -33,8 +36,10 @@ fars_read <- function(filename) {
 #'
 #'@param year Year as either character or numeric string
 #'@return character string
-#'@example make_filename(1983)
-#'
+#'@examples
+#'\dontrun{
+#'make_filename(1983)
+#'}
 
 make_filename <- function(year) {
   year <- as.integer(year)
@@ -55,8 +60,10 @@ make_filename <- function(year) {
 #'@return a list of data frames the length of the \code{years} argument
 #'@importFrom dplyr mutate select
 #'@note function will try to continue if it finds any invalid years and will throw a warning
-#'@example fars_read_years(2013:2015)
-#'
+#'@examples
+#'\dontrun{
+#'fars_read_years(2013:2015)
+#'}
 
 fars_read_years <- function(years) {
   lapply(years, function(year) {
@@ -82,7 +89,10 @@ fars_read_years <- function(years) {
 #'@return a tibble of incidents by month per year
 #'@importFrom dplyr bind_rows group_by summarize
 #'@importFrom tidyr spread
-#'@example fars_summarize_years(2013:2015)
+#'@examples
+#'\dontrun{
+#'fars_summarize_years(2013:2015)
+#'}
 #'@export
 
 fars_summarize_years <- function(years){
@@ -108,7 +118,10 @@ fars_summarize_years <- function(years){
 #'@importFrom dplyr filter
 #'@importFrom maps map
 #'@importFrom graphics points
-#'@example fars_map_state(stateID, year)
+#'@examples
+#'\dontrun{
+#'fars_map_state(39, 2014)
+#'}
 #'@export
 
 fars_map_state <- function(state.num, year) {

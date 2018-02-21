@@ -21,6 +21,11 @@ This function will map the fatalities for a given state using latitude and longi
 Function will throw an error if \code{state num} is not a valid state. Function will also see
       if there are no accidents for a given state/year and pass a message to that effect.
 }
+\examples{
+\dontrun{
+fars_map_state(39, 2014)
+}
+}
 \references{
 see US Census FIPS numbers for state codes \href{State Codes}{https://www.census.gov/geo/reference/ansi_statetables.html}
 }
