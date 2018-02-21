@@ -4,4 +4,4 @@ language: R
 sudo: false
 cache: packages
 r:
-  -deval
+  -devel
