@@ -16,6 +16,3 @@ a tibble of incidents by month per year
 This function will process the FARS data to produce a tibble that shows the number of
 fatalities by month per year
 }
-\examples{
-fars_summarize_years(2013:2015)
-}

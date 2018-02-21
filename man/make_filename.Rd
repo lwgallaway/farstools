@@ -16,6 +16,3 @@ character string
 Function to make a custom filename based on a given year. Given an input year
 (ex. \code{1983}) it will return a character string (\code{[1] "accident_1983.csv.bz2"})
 }
-\examples{
-make_filename(1983)
-}

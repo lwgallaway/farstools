@@ -19,7 +19,3 @@ in a .csv file and return it back as a tidyverse dataframe(tibble).
 \note{
 Function will also check is file exists and throw an error if it is not present.
 }
-\examples{
-fars_read("accident_2014.csv.bz2")
-
-}
