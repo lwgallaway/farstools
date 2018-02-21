@@ -25,7 +25,7 @@ file format:
 
 Once the data files have been saved to a directory, supply the years that you would like to summarize to the fars_summarize_years function.
 
-```{r eval = FALSE}
+```{r eval=FALSE}
 fars_summarize_years(2013:2015)
 ```
 
