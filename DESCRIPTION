@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person("Logan", "Gallaway", email = "lwgallaway@gmail.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 Depends: R (>= 3.4.3)
-License: CC0
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
 Suggests: knitr,
